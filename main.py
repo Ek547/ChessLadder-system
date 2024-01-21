@@ -14,7 +14,7 @@ class ChessMatch:
         self.player2 = player2
         self.outcome = outcome 
 class MyApp:
-    def __init__(self, root):
+    def __init__(self, root):#Main menu
         self.root = root
         self.root.title("My App")
 
@@ -41,7 +41,7 @@ class MyApp:
         self.display_ladder_frame = None
 
 
-    def create_button(self, text, command):
+    def create_button(self, text, command):#Create button function
         return tk.Button(self.root, text=text, command=command)
 
     def add_player(self):
